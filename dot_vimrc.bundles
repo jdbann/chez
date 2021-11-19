@@ -7,4 +7,7 @@ Plug 'junegunn/fzf.vim'
 " The only way to use git
 Plug 'tpope/vim-fugitive'
 
+" Pass vim split navigation commands up to tmux for easier navigation
+Plug 'christoomey/vim-tmux-navigator'
+
 call plug#end()
