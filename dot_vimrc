@@ -56,3 +56,11 @@ nnoremap <C-l> <C-w>l
 
 " Always use vertical diffs
 set diffopt+=vertical
+
+" Map Ctrl + p to open fuzzy find (FZF)
+nnoremap <c-p> :Files<cr>
+
+" Load bundled plugins
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif

@@ -17,4 +17,11 @@ mas "Craft", id: 1487937127
 mas "Fantastical", id: 975937182
 mas "Reeder", id: 1529448980
 EOF
+
+# Setup fzf completions and shortcuts
+$(brew --prefix)/opt/fzf/install --no-bash --no-fish --all
+
+# Install vim-plug for managing vim plugins
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 {{ end -}}

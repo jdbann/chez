@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# .vimrc.bundles hash: {{ include "dot_vimrc.bundles" | sha256sum }}
+vim -E -s +PlugUpgrade +qa
+vim -u "$HOME"/.vimrc.bundles +PlugUpdate +PlugClean! +qa
