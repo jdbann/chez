@@ -1,3 +1,9 @@
+if &compatible
+  set nocompatible
+end
+
+let g:has_async = v:version >= 800 || has('nvim')
+
 call plug#begin('~/.vim/bundle')
 
 " Setup FZF for searching for files with Ctrl+P (amongst countless other things)
@@ -9,5 +15,8 @@ Plug 'tpope/vim-fugitive'
 
 " Pass vim split navigation commands up to tmux for easier navigation
 Plug 'christoomey/vim-tmux-navigator'
+
+" Load a nice colour scheme
+Plug 'joshdick/onedark.vim'
 
 call plug#end()

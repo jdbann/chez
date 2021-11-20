@@ -22,6 +22,11 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
+" Load bundled plugins
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+
 filetype plugin indent on
 
 " Softtabs, 2 spaces
@@ -60,7 +65,5 @@ set diffopt+=vertical
 " Map Ctrl + p to open fuzzy find (FZF)
 nnoremap <c-p> :Files<cr>
 
-" Load bundled plugins
-if filereadable(expand("~/.vimrc.bundles"))
-  source ~/.vimrc.bundles
-endif
+" Color scheme
+colorscheme onedark
