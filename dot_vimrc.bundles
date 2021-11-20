@@ -19,4 +19,7 @@ Plug 'christoomey/vim-tmux-navigator'
 " Load a nice colour scheme
 Plug 'morhetz/gruvbox'
 
+" Automatically create directories when saving files
+Plug 'pbrisbin/vim-mkdir'
+
 call plug#end()
