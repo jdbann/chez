@@ -17,6 +17,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'christoomey/vim-tmux-navigator'
 
 " Load a nice colour scheme
-Plug 'joshdick/onedark.vim'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
