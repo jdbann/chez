@@ -22,6 +22,9 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
 
+" Enable ALE completion - has to be set before loading
+let g:ale_completion_enabled = 1
+
 " Load bundled plugins
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
@@ -74,3 +77,30 @@ endif
 
 " Color scheme
 colorscheme gruvbox
+
+" Setup some linting and fixing with ale
+let g:ale_linters = {
+  \ 'go': ['gopls'],
+  \}
+
+" Fix files on save
+let g:ale_fix_on_save = 1
+
+" Not sure if this is what I think it is...
+let g:ale_completion_autoimport = 1
+
+" Use ag in fzf for listing files. Lightning fast and respects .gitignore
+let $FZF_DEFAULT_COMMAND = 'ag --literal --files-with-matches --nocolor --hidden -g ""'
+
+" Use Ag over Grep
+set grepprg=ag\ --nogroup\ --nocolor
+
+" Use dispatch.vim to execute tests in tmux
+let test#strategy = "dispatch"
+
+" vim-test mappings
+nnoremap <silent> <Leader>t :TestFile<CR>
+nnoremap <silent> <Leader>s :TestNearest<CR>
+nnoremap <silent> <Leader>l :TestLast<CR>
+nnoremap <silent> <Leader>a :TestSuite<CR>
+nnoremap <silent> <Leader>gt :TestVisit<CR>

@@ -22,4 +22,14 @@ Plug 'morhetz/gruvbox'
 " Automatically create directories when saving files
 Plug 'pbrisbin/vim-mkdir'
 
+" Have a nice time using Go
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
+" Get some LSP action happening
+Plug 'dense-analysis/ale'
+
+" Easy test running
+Plug 'vim-test/vim-test'
+Plug 'tpope/vim-dispatch'
+
 call plug#end()
