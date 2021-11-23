@@ -32,4 +32,10 @@ Plug 'dense-analysis/ale'
 Plug 'vim-test/vim-test'
 Plug 'tpope/vim-dispatch'
 
+" Smart commenting
+Plug 'vim-scripts/tComment'
+
+" Manipulate surrounding pairs
+Plug 'tpope/vim-surround'
+
 call plug#end()
