@@ -41,4 +41,10 @@ Plug 'tpope/vim-surround'
 " Repeat various extra vim mappings
 Plug 'tpope/vim-repeat'
 
+" Get all the syntax highlighting
+Plug 'sheerun/vim-polyglot'
+
+" Poison this setup with JS tooling
+Plug 'pangloss/vim-javascript'
+
 call plug#end()
