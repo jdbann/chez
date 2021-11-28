@@ -1,0 +1,16 @@
+{{- define "promptIfBlank" -}}
+{{- $value := "" -}}
+{{- $data := first . -}}
+{{- $attributes := rest . -}}
+{{- range $attributes -}}
+{{-   if (hasKey $data .) -}}
+{{-     $value = get $data . -}}
+{{-   else -}}
+{{-     $value = promptString . -}}
+{{-   end }}
+  {{ . }} = {{ $value | quote }}
+{{- end -}}
+{{- end -}}
+
+[data]
+{{- template "promptIfBlank" list . "name" "email" -}}

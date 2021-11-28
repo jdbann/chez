@@ -1,0 +1,36 @@
+[init]
+  defaultBranch = main
+[push]
+  default = current
+[color]
+  ui = auto
+[alias]
+  pf = push --force-with-lease
+  cleanup = "!f() { \
+                git branch --merged | \
+                egrep -v \"(^\\*|master|main)\" | \
+                xargs git branch -d; \
+              }; f"
+[core]
+  excludesfile = ~/.gitignore
+  autocrlf = input
+  pager = delta
+[merge]
+  ff = only
+[commit]
+  template = ~/.gitmessage
+  verbose = true
+[fetch]
+  prune = true
+[rebase]
+  autosquash = true
+[pull]
+  ff = only
+[user]
+  name = {{ .name }}
+  email = {{ .email }}
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  line-numbers = true
+  syntax-theme = gruvbox-dark
