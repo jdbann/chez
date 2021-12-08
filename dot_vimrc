@@ -98,6 +98,10 @@ set grepprg=ag\ --nogroup\ --nocolor
 " Use dispatch.vim to execute tests in tmux
 let test#strategy = "dispatch"
 
+" Move between linting errors
+nnoremap ]r :ALENextWrap<CR>
+nnoremap [r :ALEPreviousWrap<CR>
+
 " vim-test mappings
 nnoremap <silent> <Leader>t :TestFile<CR>
 nnoremap <silent> <Leader>s :TestNearest<CR>
