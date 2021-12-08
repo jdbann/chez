@@ -12,6 +12,7 @@ Plug 'junegunn/fzf.vim'
 
 " The only way to use git
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-rhubarb'
 
 " Pass vim split navigation commands up to tmux for easier navigation
 Plug 'christoomey/vim-tmux-navigator'
