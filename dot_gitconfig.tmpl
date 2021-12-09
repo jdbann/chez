@@ -27,8 +27,8 @@
 [pull]
   ff = only
 [user]
-  name = {{ .name }}
-  email = {{ .email }}
+  name = {{ secret "get" "name@chez" | quote }}
+  email = {{ secret "get" "email@chez" | quote }}
 [interactive]
   diffFilter = delta --color-only
 [delta]
