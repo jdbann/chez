@@ -80,7 +80,18 @@ colorscheme gruvbox
 
 " Setup some linting and fixing with ale
 let g:ale_linters = {
-  \ 'go': ['gopls'],
+  \ 'css': ['stylelint'],
+  \ 'javascript': ['prettier'],
+  \ 'go': ['gopls', 'golangci-lint'],
+  \ 'gohtmltmpl': ['prettier'],
+  \ 'sql': ['pgformatter'],
+  \}
+
+let g:ale_fixers = {
+  \ 'css': ['stylelint'],
+  \ 'javascript': ['prettier'],
+  \ 'gohtmltmpl': ['prettier'],
+  \ 'sql': ['pgformatter'],
   \}
 
 " Fix files on save
@@ -88,6 +99,9 @@ let g:ale_fix_on_save = 1
 
 " Not sure if this is what I think it is...
 let g:ale_completion_autoimport = 1
+
+" Options for golangci-lint
+let g:ale_go_golangci_lint_options = ''
 
 " Use ag in fzf for listing files. Lightning fast and respects .gitignore
 let $FZF_DEFAULT_COMMAND = 'ag --literal --files-with-matches --nocolor --hidden -g ""'
