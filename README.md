@@ -6,7 +6,7 @@ John's dotfiles. All managed with
 ## Setup a new machine
 
 ```zsh
-$ sh -c "$(curl -fsLS git.io/chezmoi)" -- init jdbann/chez --apply
+$ BINDIR=~/.bin sh -c "$(curl -fsLS git.io/chezmoi)" -- init jdbann/chez --apply
 ```
 
 Installs `chezmoi` in `./bin`, pulls this repo and applies the configuration.
