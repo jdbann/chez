@@ -84,6 +84,7 @@ let g:ale_linters = {
   \ 'javascript': ['prettier'],
   \ 'go': ['gopls', 'golangci-lint'],
   \ 'gohtmltmpl': ['prettier'],
+  \ 'ruby': ['prettier', 'solargraph'],
   \ 'sql': ['pgformatter'],
   \}
 
@@ -91,6 +92,7 @@ let g:ale_fixers = {
   \ 'css': ['stylelint'],
   \ 'javascript': ['prettier'],
   \ 'gohtmltmpl': ['prettier'],
+  \ 'ruby': ['prettier'],
   \ 'sql': ['pgformatter'],
   \}
 
@@ -102,6 +104,7 @@ let g:ale_completion_autoimport = 1
 
 " Options for golangci-lint
 let g:ale_go_golangci_lint_options = ''
+let g:ale_go_golangci_lint_package = 1
 
 " Use ag in fzf for listing files. Lightning fast and respects .gitignore
 let $FZF_DEFAULT_COMMAND = 'ag --literal --files-with-matches --nocolor --hidden -g ""'
