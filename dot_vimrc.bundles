@@ -51,4 +51,7 @@ Plug 'pangloss/vim-javascript'
 " Find and replace for cases and plurals
 Plug 'tpope/vim-abolish'
 
+" Rails tools
+Plug 'tpope/vim-rails'
+
 call plug#end()
