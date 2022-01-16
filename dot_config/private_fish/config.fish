@@ -5,5 +5,6 @@ eval (/opt/homebrew/bin/brew shellenv)
 source /opt/homebrew/opt/asdf/libexec/asdf.fish
 
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    # Setup startship as the prompt
+    starship init fish | source
 end
