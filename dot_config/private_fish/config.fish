@@ -7,4 +7,7 @@ source /opt/homebrew/opt/asdf/libexec/asdf.fish
 if status is-interactive
     # Setup startship as the prompt
     starship init fish | source
+
+    # Setup gcloud completions
+    source /opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc
 end
