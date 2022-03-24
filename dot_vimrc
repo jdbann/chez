@@ -84,7 +84,6 @@ let g:ale_linters = {
   \ 'javascript': ['prettier'],
   \ 'go': ['gopls', 'golangci-lint'],
   \ 'gohtmltmpl': ['prettier'],
-  \ 'ruby': ['prettier', 'solargraph'],
   \ 'sql': ['pgformatter'],
   \}
 
@@ -92,7 +91,6 @@ let g:ale_fixers = {
   \ 'css': ['stylelint'],
   \ 'javascript': ['prettier'],
   \ 'gohtmltmpl': ['prettier'],
-  \ 'ruby': ['prettier'],
   \ 'sql': ['pgformatter'],
   \}
 
