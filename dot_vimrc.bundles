@@ -55,4 +55,7 @@ Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 
+" Language server
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
