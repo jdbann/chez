@@ -23,11 +23,16 @@ if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
 endif
 
 " Enable ALE completion - has to be set before loading
-let g:ale_completion_enabled = 1
+" let g:ale_completion_enabled = 1
 
 " Load bundled plugins
 if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
+endif
+
+" Load coc.nvim config
+if filereadable(expand("~/.vimrc.coc.nvim"))
+  source ~/.vimrc.coc.nvim
 endif
 
 filetype plugin indent on
