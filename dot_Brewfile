@@ -1,3 +1,8 @@
+tap "charmbracelet/tap"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/cask-fonts"
+tap "homebrew/core"
 brew "asciinema"
 brew "asdf"
 brew "bat"
@@ -5,18 +10,24 @@ brew "direnv"
 brew "fish"
 brew "fzf"
 brew "gh"
+brew "git"
 brew "git-delta"
 brew "glow"
+brew "httpie"
+brew "jq"
 brew "mas"
-
+brew "postgresql"
+brew "the_silver_searcher"
+brew "tmux"
+brew "vim"
 cask "1password"
 cask "dash"
 cask "discord"
 cask "font-hack"
+cask "google-cloud-sdk"
 cask "iterm2"
 cask "raycast"
 cask "tweetbot"
-
 mas "1Blocker", id: 1365531024
 mas "Craft", id: 1487937127
 mas "Fantastical", id: 975937182
@@ -25,5 +36,8 @@ mas "iA Writer", id: 775737590
 mas "Keynote", id: 409183694
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Pixelmator Pro", id: 1289583905
 mas "Reeder", id: 1529448980
 mas "Streaks", id: 963034692
+mas "Things", id: 904280696
+mas "Xcode", id: 497799835
