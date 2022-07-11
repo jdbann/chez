@@ -26,9 +26,6 @@ Plug 'pbrisbin/vim-mkdir'
 " Have a nice time using Go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
-" Get some LSP action happening
-Plug 'dense-analysis/ale'
-
 " Easy test running
 Plug 'vim-test/vim-test'
 Plug 'tpope/vim-dispatch'
@@ -56,6 +53,6 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-endwise'
 
 " Language server
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', { 'branch': 'release', 'do': 'yarn install --frozen-lockfile' }
 
 call plug#end()
