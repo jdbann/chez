@@ -6,6 +6,7 @@ tap "homebrew/core"
 brew "asciinema"
 brew "asdf"
 brew "bat"
+brew "chezmoi"
 brew "direnv"
 brew "fish"
 brew "fzf"
@@ -28,7 +29,6 @@ cask "google-cloud-sdk"
 cask "iterm2"
 cask "raycast"
 cask "tweetbot"
-mas "1Blocker", id: 1365531024
 mas "Craft", id: 1487937127
 mas "Fantastical", id: 975937182
 mas "Flow", id: 1423210932
@@ -38,6 +38,5 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
 mas "Reeder", id: 1529448980
-mas "Streaks", id: 963034692
 mas "Things", id: 904280696
 mas "Xcode", id: 497799835
