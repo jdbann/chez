@@ -35,5 +35,4 @@
   line-numbers = true
   syntax-theme = gruvbox-dark
 [credential "https://github.com"]
-  helper =
   helper = !/opt/homebrew/bin/gh auth git-credential
