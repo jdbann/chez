@@ -1,3 +1,7 @@
+" Required LSP extensions - coc.nvim will try to install any that are not
+" installed in after initialisation.
+let g:coc_global_extensions = ['coc-json']
+
 " Give more space for displaying messages.
 set cmdheight=2
 
