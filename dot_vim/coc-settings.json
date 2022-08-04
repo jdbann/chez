@@ -1,9 +1,53 @@
 {
+  /*
+    coc
+  */
+  // Format the following filetypes when saved
+  "coc.preferences.formatOnSaveFiletypes": [
+    "css",
+    "javascript",
+    "json",
+    "typescript"
+  ],
+  /*
+    css
+  */
+  // Prevent errors for Tailwind's @tailwind and @layer rules
+  "css.lint.unknownAtRules": "ignore",
+  /*
+    tailwindCSS
+  */
+  // Remove duplicate classes on save
+  "tailwindCSS.headwind.removeDuplicates": true,
+  // Sort classes on save
+  "tailwindCSS.headwind.runOnSave": true,
+  /*
+    languageserver
+    - configure servers not provided by extensions
+  */
   "languageserver": {
+    // Use efm to call vint, which lints vim
+    "efm": {
+      "command": "efm-langserver",
+      "args": [],
+      "trace.server": "verbose",
+      "filetypes": [
+        "vim"
+      ]
+    },
+    // Use gopls instance provided by vim-go (rather than installing a Go
+    // extension)
     "golang": {
       "command": "gopls",
-      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-      "filetypes": ["go"]
+      "rootPatterns": [
+        "go.mod",
+        ".vim/",
+        ".git/",
+        ".hg/"
+      ],
+      "filetypes": [
+        "go"
+      ]
     }
   }
 }
